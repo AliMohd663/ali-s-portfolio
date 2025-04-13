@@ -1,0 +1,14 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0d0d0d;
+    color: #fff;
+    font-family: sans-serif;
+    overflow-x: hidden;
+  }
+  
+  main {
+    padding-top: 70px; /* Adjust this based on navbar height */
+  }
+  

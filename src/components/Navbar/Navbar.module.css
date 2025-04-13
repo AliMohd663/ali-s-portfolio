@@ -1,0 +1,89 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .logoWrapper {
+  border: 2px solid yellowgreen;
+border-radius: 50%;
+padding: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navRight {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navLinks li a {
+    color: yellowgreen;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .navLinks li a:hover {
+    color: #1de9b6;
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+    color: #ccc;
+    background: none;
+    border: none;
+    margin-left: 1rem;
+    padding: 0.25rem;
+    font-size: 1.8rem;
+  }
+  
+  /* Mobile styles */
+  @media (max-width: 768px) {
+    .navLinks {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #111;
+      width: 100vw;
+      flex-direction: column;
+      align-items: center;
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease-out;
+    }
+  
+    .navLinks.showMenu {
+      max-height: 500px; /* enough to show all links */
+      transition: max-height 0.5s ease-in;
+    }
+  
+    .navLinks li {
+      padding: 0.75rem 0;
+      text-align: center;
+      width: 100%;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  
