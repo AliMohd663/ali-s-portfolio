@@ -33,20 +33,6 @@ const projects = [
     demoLink: "https://evangadiforum2017.ali-mohammed.com/",
     codeLink: "https://github.com/AliMohd663/forum2017"
   },
-  {
-    title: "Portfolio Website",
-    image: "https://via.placeholder.com/300x200",
-    description: "A personal portfolio built using React and modular CSS.",
-    demoLink: "https://yourportfolio.com",
-    codeLink: "https://github.com/yourusername/portfolio"
-  },
-  {
-    title: "Task Manager App",
-    image: "https://via.placeholder.com/300x200",
-    description: "Full-stack task management app with MERN stack.",
-    demoLink: "https://yourtaskapp.com",
-    codeLink: "https://github.com/yourusername/task-manager"
-  }
 ];
 
 export default function Projects() {
