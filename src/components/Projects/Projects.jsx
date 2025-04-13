@@ -39,7 +39,7 @@ export default function Projects() {
   return (
     <section id="projects" className={styles.projects}>
       <div className={styles.container}>
-        <h2>Projects</h2>
+        <h2> <b className={styles.build}>Built</b> & Deployed</h2>
         <div className={styles.projectList}>
           {projects.map((project, index) => (
             <div key={index} className={styles.projectCard}>

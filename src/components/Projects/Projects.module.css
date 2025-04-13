@@ -94,6 +94,9 @@
     color: #f74be8;
     text-decoration: underline;
   }
+  .build{
+    color: yellowgreen;
+  }
   @media (max-width: 1024px) {
     .projectCard {
       width: calc(33.33% - 1.5rem); /* 3 columns on tablets */
