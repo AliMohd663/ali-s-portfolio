@@ -47,16 +47,16 @@ function Contact() {
 
   return (
     <section id="contact" className={styles.contact}>
-      <h2>Contact Me</h2>
+      <h2>Contact <b className={styles.me}>Me</b> </h2>
       <br />
 
       <div className={styles.container}>
         {/* Left: contact info + social links */}
         <div className={styles.info}>
           <div className={styles.email}>
-            <p><MdOutlineMailOutline size={25}/> aliw663.am@gmail.com</p>
-            <p><MdAlternateEmail size={25}/> help@ali-mohammed.com</p>
-            <p><BsTelephone size={25}/> +966552265395</p>
+            <p><MdOutlineMailOutline style={{color: "yellowgreen", size:"25"}} /> aliw663.am@gmail.com</p>
+            <p><MdAlternateEmail style={{color: "yellowgreen", size:"25"}} /> help@ali-mohammed.com</p>
+            <p><BsTelephone style={{color: "yellowgreen", size:"25"}} /> +966552265395</p>
           </div>
 
           <div className={styles.socialIcons}>

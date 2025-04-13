@@ -1,17 +1,18 @@
 import React from "react";
-import styles from "./About.module.css";
+import styles from "./about.module.css";
 
-export default function About() {
+function About() {
   return (
     <section id="about" className={styles.about}>
-      <div className={styles.container}>
-        <h2>About Me</h2>
-        <p>
-          I'm a passionate full-stack developer with a focus on creating modern, responsive web applications.
-          I specialize in JavaScript, React, Node.js, and database systems like MySQL. With a strong background
-          in UI/UX and API integrations, I enjoy bringing ideas to life in the browser.
-        </p>
-      </div>
+      <h2>About <b className={styles.aboutme}>Me</b></h2>
+      <p>I'm a full-stack web developer passionate about building complete digital solutions. My toolkit includes:
+Frontend: HTML5, CSS3, JavaScript (ES6+), and React for creating dynamic, responsive interfaces
+Backend: Node.js & Express for crafting scalable server-side architectures
+I thrive on turning complex problems into elegant solutions, obsessing over clean code and seamless user experiences. From pixel-perfect layouts to RESTful APIs, I love bridging the gap between design and functionality.
+
+</p>
     </section>
   );
 }
+
+export default About;

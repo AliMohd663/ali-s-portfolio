@@ -75,7 +75,7 @@ export default function Skills() {
   return (
     <section  className={styles.skills} id="skills">
       <div className={styles.container}>
-        <h2 className={styles.namee}>Skills</h2>
+        <h2 className={styles.namee}><b className={styles.tools}>Tools</b>  & Technologies</h2>
         <div className={styles.cardGrid}>
           {skills.map((skill, index) => (
             <div key={index} className={styles.card}>

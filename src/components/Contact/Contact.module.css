@@ -5,7 +5,9 @@
   transition: background-color 0.3s ease;
 }
 
-
+.me{
+  color: yellowgreen;
+}
 
 .contact h2 {
   font-size: 2rem;
@@ -21,7 +23,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: yellowgreen;
+  /* color: yellowgreen; */
 }
 
 .contact p:hover {

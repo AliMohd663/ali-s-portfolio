@@ -41,7 +41,7 @@ h2 {
 .card h3 {
   font-size: 1.2rem;
   margin-bottom: 0.8rem;
-  color: yellowgreen;
+  color: white;
 }
 
 .card p {
@@ -53,11 +53,14 @@ h2 {
 
 .iconWrapper {
   font-size: 2rem;
-  color: #00bcd4;
+  color: yellowgreen;
   display: flex;
   justify-content: center;
   gap: 0.5rem;
 }
 .namee{
   color: white;
+}
+.tools{
+  color: yellowgreen;
 }

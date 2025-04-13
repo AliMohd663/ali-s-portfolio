@@ -51,7 +51,7 @@ export default function Services() {
   return (
     <section className={styles.services} id="services">
       <div className={styles.container}>
-        <h2 className={styles.heading}>Services</h2>
+        <h2 className={styles.heading}> <b className={styles.myservice}>My</b> Services</h2>
         <div className={styles.cards}>
           {services.map((service, index) => (
             <div key={index} className={styles.card}>
