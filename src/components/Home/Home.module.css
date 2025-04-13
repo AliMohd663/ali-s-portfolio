@@ -27,14 +27,27 @@
   justify-content: center;
 }
 
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(173, 255, 47, 0.4); /* yellowgreen glow */
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 10px rgba(173, 255, 47, 0);
+  }
+}
+
 .profileImage {
   width: 400px;
   height: 400px;
   object-fit: cover;
   border-radius: 50%;
   border: 1px solid yellowgreen;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
+  animation: pulse 3s infinite ease-in-out;
+  transition: transform 0.3s ease;
 }
+
 
 /* RIGHT (Text + Icons) */
 .right {
@@ -108,8 +121,8 @@
   }
 
   .profileImage {
-    width: 180px;
-    height: 180px;
+    width: 280px;
+    height: 280px;
   }
 
   .name {

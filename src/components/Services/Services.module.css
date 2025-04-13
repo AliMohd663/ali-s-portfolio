@@ -38,8 +38,9 @@
 }
 
 .card:hover {
+  
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 188, 212, 0.3);
+  box-shadow: 0 12px 24px rgba(104, 246, 57, 0.3);
 }
 
 .card h3 {
