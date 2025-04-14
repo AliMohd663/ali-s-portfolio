@@ -4,6 +4,8 @@ import amazonImg from '../../assets/amazon.jpeg'
 import netflixImg from '../../assets/netflix.jpeg'
 import appleImg from '../../assets/apple.jpeg'
 import evangadiImg from '../../assets/evangadi.jpeg'
+import { FaGithub } from "react-icons/fa";
+import { VscLinkExternal } from "react-icons/vsc";
 const projects = [
   {
     title: "Amazon E-Commerce Platform",
@@ -43,12 +45,21 @@ export default function Projects() {
         <div className={styles.projectList}>
           {projects.map((project, index) => (
             <div key={index} className={styles.projectCard}>
-              <img src={project.image} alt={project.title} className={styles.projectImage} />
+              <img 
+              src={project.image} 
+              alt={project.title} 
+              className={styles.projectImage} 
+              />
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <div className={styles.projectLinks}>
-                <a href={project.demoLink} target="_blank" rel="noopener noreferrer">Live</a>
-                <a href={project.codeLink} target="_blank" rel="noopener noreferrer">Code</a>
+                <a 
+                href={project.demoLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                >
+                   <VscLinkExternal size={18}/></a>
+                <a href={project.codeLink} target="_blank" rel="noopener noreferrer"><FaGithub size={20}/></a>
               </div>
             </div>
           ))}

@@ -1,0 +1,19 @@
+.resumeButton {
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+  background-color: yellowgreen;
+  color: #0d0d0d;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.resumeButton:hover {
+  background-color: #d1e7a6;
+  transform: scale(1.05);
+}
+

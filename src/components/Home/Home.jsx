@@ -5,6 +5,7 @@ import { FiGithub } from "react-icons/fi";
 import { FaLinkedinIn } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineMail } from "react-icons/md";
+import ResumeButton from "../ResumeButton/ResumeButton"; // adjust path if needed
 
 
 export default function Home() {
@@ -19,12 +20,15 @@ export default function Home() {
           <p className={styles.description}>
            <b className={styles.bold}> I’m a full-stack web developer</b> specializing in building responsive web applications using the MERN stack.
           </p>
+          
           <div className={styles.socialIcons}>
             <a href="https://github.com/AliMohd663" target="_blank" rel="noopener noreferrer"><FiGithub size={25}/></a>
             <a href="https://www.linkedin.com/in/ali-mohammed-11245530a/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn size={25}/></a>
             <a href="mailto:aliw663.am@gmail.com" target="_blank" rel="noopener noreferrer"><MdOutlineMail size={25}/></a>
             <a href="https://Wa.me/+966552265395" target="_blank" rel="noopener noreferrer"> <FaWhatsapp  size={25}/></a>
+            
           </div>
+          <ResumeButton className={styles.ResumeButtonn}/>
         </div>
       </div>
     </section>
