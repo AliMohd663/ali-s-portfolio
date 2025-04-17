@@ -18,8 +18,8 @@ function App() {
       <Services />
       <Skills />
       <Projects />
-      <Contact />
       <HireMe />
+      <Contact />
       <Footer />
     </>
   )

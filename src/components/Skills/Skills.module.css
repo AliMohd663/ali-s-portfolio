@@ -27,7 +27,8 @@ h2 {
   background: linear-gradient(135deg, #1e1e1e, #2a2a2a);
   border-radius: 12px;
   padding: 1.5rem;
-  width: 240px;
+  width: 260px;
+  min-height: 220px;
   text-align: center;
   box-shadow: 0 4px 12px rgba(0, 188, 212, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;

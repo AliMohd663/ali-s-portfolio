@@ -49,11 +49,11 @@ const skills = [
       </>
     )
   },
-  {
-    name: "Git & GitHub",
-    description: "Version control and collaboration tools.",
-    icon: <SiGithub className={styles.icon} />
-  },
+  // {
+  //   name: "Git & GitHub",
+  //   description: "Version control and collaboration tools.",
+  //   icon: <SiGithub className={styles.icon} />
+  // },
   {
     name: "Bootstrap",
     description: "Framework for responsive UI design.",
@@ -64,11 +64,11 @@ const skills = [
     description: "Interfacing between frontend and backend.",
     icon: <SiExpress className={styles.icon} />
   },
-  {
-    name: "MongoDB",
-    description: "NoSQL database for flexible data storage.",
-    icon: <SiMongodb className={styles.icon} />
-  }
+  // {
+  //   name: "MongoDB",
+  //   description: "NoSQL database for flexible data storage.",
+  //   icon: <SiMongodb className={styles.icon} />
+  // }
 ];
 
 export default function Skills() {
