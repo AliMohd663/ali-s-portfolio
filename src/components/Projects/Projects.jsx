@@ -1,14 +1,15 @@
 import React from "react";
 import styles from "./Projects.module.css";
-import amazonImg from '../../assets/amazon.jpeg'
-import netflixImg from '../../assets/netflix.jpeg'
-import appleImg from '../../assets/apple.jpeg'
-import evangadiImg from '../../assets/evangadi.jpeg'
+import amazonImg from '../../assets/amazon.jpeg';
+import netflixImg from '../../assets/netflix.jpeg';
+import appleImg from '../../assets/apple.jpeg';
+import evangadiImg from '../../assets/evangadi.jpeg';
 import { FaGithub } from "react-icons/fa";
 import { VscLinkExternal } from "react-icons/vsc";
+
 const projects = [
   {
-    title: "Amazon E-Commerce Platform",
+    title: "Amazon E-Commerce",
     image: amazonImg,
     description: "A full-stack Amazon clone with product listings, cart, and checkout. Built using React, Redux, Firebase, and Stripe.",
     demoLink: "https://alimoh663.netlify.app",
@@ -45,21 +46,23 @@ export default function Projects() {
         <div className={styles.projectList}>
           {projects.map((project, index) => (
             <div key={index} className={styles.projectCard}>
-              <img 
-              src={project.image} 
-              alt={project.title} 
-              className={styles.projectImage} 
-              />
+              <div className={styles.imageWrapper}>
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className={styles.projectImage}
+                />
+                <p className={styles.overlayDescription}>{project.description}</p>
+              </div>
               <h3>{project.title}</h3>
-              <p>{project.description}</p>
               <div className={styles.projectLinks}>
-                <a 
-                href={project.demoLink} 
-                target="_blank" 
-                rel="noopener noreferrer"
-                >
-                   <VscLinkExternal size={18}/></a>
-                <a href={project.codeLink} target="_blank" rel="noopener noreferrer"><FaGithub size={20}/></a>
+                <a href={project.demoLink} target="_blank" rel="noopener noreferrer">
+                  <VscLinkExternal size={10} /> <small>Live Demo</small>
+                </a>
+                <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
+                  <FaGithub size={11} /> <small>Source Code</small>
+                </a>
+
               </div>
             </div>
           ))}
