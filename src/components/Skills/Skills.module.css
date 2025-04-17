@@ -34,7 +34,7 @@ h2 {
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-5px);
   box-shadow: 0 12px 24px rgba(104, 246, 57, 0.3);
   
 }

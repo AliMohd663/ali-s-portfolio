@@ -1,0 +1,76 @@
+.hireMe {
+    padding: 4rem 2rem;
+    color: white;
+  }
+
+  .introText {
+    /* max-width: 1200px; */
+    margin-left: 2rem; /* creates space on the left */
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+  }
+  
+  .introText h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: yellowgreen;
+  }
+  
+  .introText p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 0.8rem;
+  }
+  
+  
+  .cardsContainer {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 1rem;
+  }
+  
+  .card {
+    background-color: #1a1a1a;
+    padding: 1.5rem;
+    border-radius: 12px;
+    flex: 1 1 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(104, 246, 57, 0.3);
+
+  }
+  
+  .card h3 {
+    color: yellowgreen;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .icon {
+    margin-bottom: 1rem;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .cardsContainer {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .intro {
+      text-align: center;
+      margin-left: 0;
+    }
+  }
+  

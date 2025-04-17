@@ -7,6 +7,7 @@ import Services from './components/Services/Services'
 import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import Navbar from './components/Navbar/Navbar'
+import HireMe from './components/HireMe/HireMe'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <HireMe />
       <Footer />
     </>
   )
