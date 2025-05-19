@@ -8,7 +8,7 @@ import {
 import { BsTelephone } from "react-icons/bs";
 import { MdLocationOn, MdAlternateEmail } from "react-icons/md";
 import emailjs from "emailjs-com";
-import styles from "./contact.module.css";
+import styles from "./Contact.module.css";
 
 function Contact() {
   const [formData, setFormData] = useState({
